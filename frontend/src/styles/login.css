@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('anime-background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+}
+
+.login-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #666;
+  background: transparent;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #666;
+  transition: top 0.3s ease, font-size 0.3s ease;
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+  top: -15px;
+  font-size: 0.8em;
+  color: #FF4081;
+}
+
+.input-group input:focus {
+  border-color: #FF4081;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #FF4081;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: #ff6394;
+}
